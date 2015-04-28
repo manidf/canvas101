@@ -7,16 +7,17 @@ var reload      = browserSync.reload;
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./app"
+        server: "./app/ch_01"
     });
 
-    gulp.watch("app/sass/*.sass", ['sass']);
-    gulp.watch("app/*.html").on('change', reload);
+    gulp.watch("app/sass/*.scss", ['sass']);
+    gulp.watch("app/**/*.html").on('change', reload);
+    gulp.watch("app/**/*.js").on('change', reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("app/sass/*.sass")
+    return gulp.src("app/sass/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("app/css"))
         .pipe(reload({stream: true}));
