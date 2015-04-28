@@ -1,0 +1,26 @@
+{
+  "name": "canvas",
+  "version": "1.0.0",
+  "description": "Canvas 101",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manidf/canvas101.git"
+  },
+  "keywords": [
+    "Canvas"
+  ],
+  "author": "Mannuel Ferreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manidf/canvas101/issues"
+  },
+  "homepage": "https://github.com/manidf/canvas101",
+  "devDependencies": {
+    "browser-sync": "^2.6.5",
+    "gulp": "^3.8.11"
+  }
+}
